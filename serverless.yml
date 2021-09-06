@@ -14,7 +14,7 @@ provider:
   environment:
     AUCTIONS_TABLE_NAME: ${self:custom.AuctionsTable.name}
   iamRoleStatements:
-    - ${file(iam/AuctionsTableIAM):AuctionsTableIAM}
+    - ${file(iam/AuctionsTableIAM.yml):AuctionsTableIAM}
 
 resources:
   Resources:
@@ -27,6 +27,13 @@ functions:
       - http:
           method: POST
           path: /auction
+
+  getAuctions:
+    handler: src/handlers/getAuctions.handler
+    events:
+      - http:
+          method: GET
+          path: /auctions
 
 custom:
   AuctionsTable:
