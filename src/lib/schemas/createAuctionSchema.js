@@ -1,4 +1,4 @@
-const schema = {
+export default createAuctionSchema = {
   type: 'object',
   properties: {
     body: {
@@ -13,5 +13,3 @@ const schema = {
   },
   required: ['body'],
 };
-
-export default schema;

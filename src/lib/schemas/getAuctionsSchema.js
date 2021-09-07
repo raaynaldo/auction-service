@@ -1,4 +1,4 @@
-const schema = {
+export default getAuctionsSchema = {
   type: 'object',
   properties: {
     queryStringParameters: {
@@ -14,5 +14,3 @@ const schema = {
   },
   required: ['queryStringParameters'],
 };
-
-export default schema;
