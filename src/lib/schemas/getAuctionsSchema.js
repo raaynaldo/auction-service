@@ -1,4 +1,4 @@
-export default getAuctionsSchema = {
+const getAuctionsSchema = {
   type: 'object',
   properties: {
     queryStringParameters: {
@@ -14,3 +14,5 @@ export default getAuctionsSchema = {
   },
   required: ['queryStringParameters'],
 };
+
+export default getAuctionsSchema

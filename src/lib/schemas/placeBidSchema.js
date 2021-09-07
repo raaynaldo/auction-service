@@ -1,4 +1,4 @@
-export default placeBidSchema = {
+const placeBidSchema = {
   type: 'object',
   properties: {
     body: {
@@ -13,3 +13,5 @@ export default placeBidSchema = {
   },
   required: ['body'],
 };
+
+export default placeBidSchema;
