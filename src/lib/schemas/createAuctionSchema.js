@@ -1,4 +1,4 @@
-export default createAuctionSchema = {
+const createAuctionSchema = {
   type: 'object',
   properties: {
     body: {
@@ -13,3 +13,5 @@ export default createAuctionSchema = {
   },
   required: ['body'],
 };
+
+export default createAuctionSchema;
